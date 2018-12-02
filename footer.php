@@ -135,7 +135,7 @@ $.each($(".post-like"),function(i,item){
 </div>
 <script src="<?php $this->options->themeUrl('/assets/panda/TweenMax.min.js'); ?>"></script>
 <script src="<?php $this->options->themeUrl('/assets/panda/DrawSVGPlugin.min.js'); ?>"></script>
-<script src="<?php $this->options->themeUrl('/assets/panda/panda.js'); ?>"></script>
+<script src="<?php $this->options->themeUrl('/assets/panda/panda01.js'); ?>"></script>
 <div id="bg-music" class="aplayer no-destroy" data-fixed="true" data-id="39875562" data-server="netease" data-type="playlist" data-auth="ad6aee70b90fe934986b7e0fce803b23" data-theme="#ad7a86" data-preload="auto" data-autoplay="false" data-listMaxHeight="340px" data-order="list"></div>
 <?php endif; ?>
 </body>

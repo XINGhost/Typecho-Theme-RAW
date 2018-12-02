@@ -81,8 +81,35 @@ $(document).on('pjax:send',function(){
     $("#panda").fadeTo(0,0);
 })
 
+function hitokoto(){
+    $.ajax({
+        url: " https://v1.hitokoto.cn/?c=a&encode=text",
+        async:true,
+        success:function(data){
+            $("#hitokoto>div").html(data);
+        }
+    });
+}
+
+hitokoto();
+
 $(document).on('pjax:complete',function(){
+    hitokoto();
     setTimeout(function(){
         $("#panda").fadeTo(500,1);
     },800)
 })
+
+setInterval(function(){
+	var start_timestamp = 1498733340000;
+	var times = new Date().getTime() - new Date(start_timestamp).getTime();
+    times = Math.floor(times/1000); // convert total milliseconds into total seconds
+    var days = Math.floor( times/(60*60*24) ); //separate days
+    times %= 60*60*24; //subtract entire days
+    var hours = Math.floor( times/(60*60) ); //separate hours
+    times %= 60*60; //subtract entire hours
+    var minutes = Math.floor( times/60 ); //separate minutes
+    times %= 60; //subtract entire minutes
+    var seconds = Math.floor( times/1 ); // remainder is seconds
+    $("#uptime>div").html(days + " 天 " + hours + " 小时 " + minutes + " 分 " + seconds + " 秒 ");
+}, 1000);

@@ -49,9 +49,21 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
             </div>
         </div>
     </div>
+    <div id="uptime" class="nav-left-panel" style="animation-delay:0.2s">
+        <span class="hidden-xs"><i class="fa fa-heart"></i> 感谢陪伴</span>
+        <div style="padding:0.5rem 0.3em;text-align: center;line-height: 1.5;">
+            <div class="idot"></div><div class="idot"></div><div class="idot"></div>
+        </div>
+    </div>
+    <div id="hitokoto" class="nav-left-panel" style="animation-delay:0.4s">
+        <span class="hidden-xs"><i class="fa fa-pencil"></i> 一言</span>
+        <div style="padding:0.5rem;text-align: center;line-height: 1.5;">
+            <div class="idot"></div><div class="idot"></div><div class="idot"></div>
+        </div>
+    </div>
     <?php 
         if($this->options->aside_nav &&$this->options->aside_nav!=''){
-            echo '<div id="pages" class="nav-left-panel" style="animation-delay:0.2s">
+            echo '<div id="pages" class="nav-left-panel" style="animation-delay:0.6s">
             <span class="hidden-xs"><i class="fa fa-compass"></i> 页面导航</span>
                 <ul id="pages-ul">';
             $navs=explode(PHP_EOL,$this->options->aside_nav);
@@ -65,7 +77,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
     <?php 
         if($this->options->aside_link &&$this->options->aside_link!=''){
-            echo '<div id="links" class="nav-left-panel" style="animation-delay:0.4s">
+            echo '<div id="links" class="nav-left-panel" style="animation-delay:0.8s">
             <span><i class="fa fa-link"></i> 友情链接</span>
                 <ul>';
             $navs=explode(PHP_EOL,$this->options->aside_link);
@@ -78,7 +90,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
         }
     ?>
     <?php if(Utils::tocPosition($this,$this->user->hasLogin())=='nav-left'):?>
-    <div id="TOC" style="animation-delay:0.6s">
+    <div id="TOC" style="animation-delay:1s">
         <style>a[data-src="#TOC"]{display:flex}</style>
         <span style="font-size:0.9em" class="hidden-xs"><i style="font-size:0.9em" class="fa fa-th-list"></i> 文章目录</span>
         <?php echo $GLOBALS['TOC_O']; ?>
