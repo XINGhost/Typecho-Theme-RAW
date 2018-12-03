@@ -497,8 +497,11 @@ html{
 
 
 html{
-    font-size: 16px;
+    font-size: 18px;
     font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Hiragino Sans GB,Droid Sans Fallback,Microsoft YaHei,sans-serif;
+}
+html.win{
+    font-size: 16px;
 }
 body{
     width: 100%;
@@ -1396,6 +1399,14 @@ article{
     text-align: justify;
     word-break: break-word;
 }
+.post-item.full article{
+    padding: 0 calc(45px - 1rem);
+}
+@media screen and (max-width:768px){
+    .post-item.full article{
+        padding: 0;
+    }
+}
 article > *{
     max-width: 100%;
 }
@@ -1592,9 +1603,6 @@ article > ol,article > ul{
     padding: 0 1em;
     font-size: 0.97rem;
 }
-article > ul >li{
-    list-style-type: square;
-}
 article > ul > li,article > ol > li{
     line-height: 1.8;
     margin: 0.5rem 0;
@@ -1685,12 +1693,17 @@ article table tr>td:first-child,article table tr>th:first-child{
     padding: 1rem;
     margin: 5px;
     margin-bottom: 50px;
-    padding:1em;
+    padding:1em 45px;
     background: #fff;
     background: var(--bg-color);
     border-radius: 6px;
     box-shadow: 0 0 4px rgba(5, 5, 5, 0.3);
     -webkit-box-shadow:0 0 4px rgba(5, 5, 5, 0.3);
+}
+@media screen and (max-width:768px){
+    #comments{
+        padding: 1em;
+    }
 }
 #coments form,#coments p{
     width: 100%;
