@@ -56,7 +56,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
         </div>
     </div>
     <div id="hitokoto" class="nav-left-panel" style="animation-delay:0.4s">
-        <span class="hidden-xs"><i class="fa fa-pencil"></i> Hitokoto <i style="cursor:pointer" class="fa fa-refresh" onclick="hitokoto(this);"></i></span>
+        <span class="hidden-xs"><i class="fa fa-pencil"></i> Hitokoto <i style="cursor:pointer;font-size: 0.7em;opacity: 0.4" class="fa fa-refresh" onclick="hitokoto(this);"></i></span>
         <div style="padding:0.5rem;text-align: center;line-height: 1.5;">
             
         </div>
