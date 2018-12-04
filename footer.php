@@ -135,7 +135,7 @@ $.each($(".post-like"),function(i,item){
 </div>
 <script src="<?php $this->options->themeUrl('/assets/panda/TweenMax.min.js'); ?>"></script>
 <script src="<?php $this->options->themeUrl('/assets/panda/DrawSVGPlugin.min.js'); ?>"></script>
-<script src="<?php $this->options->themeUrl('/assets/panda/panda01.js'); ?>"></script>
+<script src="<?php $this->options->themeUrl('/assets/panda/panda02.js'); ?>"></script>
 <?php endif; ?>
 </body>
 </html>

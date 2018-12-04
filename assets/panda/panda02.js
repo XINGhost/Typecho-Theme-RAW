@@ -81,11 +81,14 @@ $(document).on('pjax:send',function(){
     $("#panda").fadeTo(0,0);
 })
 
-function hitokoto(){
+function hitokoto(item){
+    $(item).addClass("fa-spin");
+    $("#hitokoto>div").html(`<div class="idot"></div><div class="idot"></div><div class="idot"></div>`);
     $.ajax({
         url: " https://v1.hitokoto.cn/?c=a&encode=text",
         async:true,
         success:function(data){
+            $(item).removeClass("fa-spin");
             $("#hitokoto>div").html(data);
         }
     });
