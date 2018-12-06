@@ -68,27 +68,26 @@ masterTl
 //GSDevTools.create();
 
 $(document).ready(function(){
-    $(".waifu").css("left",$(".center").offset().left+$(".center").width()+"px");
-    $(".waifu").attr("data-position","ok");
-    if($(document).scrollTop()+window.innerHeight-($("#links").offset().top+$("#links").height())>320 && $(".waifu").attr("data-position")=="ok"){
-        $(".waifu").fadeIn(800);
+    $("#panda").css("left",$(".center").offset().left+$(".center").width()+"px");
+    $("#panda").attr("data-position","ok");
+    if($(document).scrollTop()+window.innerHeight-($("#links").offset().top+$("#links").height())>200 && $("#panda").attr("data-position")=="ok"){
+        $("#panda").show();
     }
 })
 $(document).scroll(function(){
-    if($(document).scrollTop()+window.innerHeight-($("#links").offset().top+$("#links").height())>320 && $(".waifu").attr("data-position")=="ok"){
-        $(".waifu").fadeIn(800);
+    if($(document).scrollTop()+window.innerHeight-($("#links").offset().top+$("#links").height())>200 && $("#panda").attr("data-position")=="ok"){
+        $("#panda").show();
     }else{
-        $(".waifu").hide();
+        $("#panda").hide();
     }
     
 })
 $(window).resize(function(){
-    $(".waifu").css("left",$(".center").offset().left+$(".center").width()+"px")
+    $("#panda").css("left",$(".center").offset().left+$(".center").width()+"px")
 })
 
 $(document).on('pjax:send',function(){
     $("#panda").hide();
-    $(".waifu").hide();
 })
 
 function hitokoto(item){
@@ -108,9 +107,8 @@ hitokoto();
 
 $(document).on('pjax:complete',function(){
     hitokoto();
-    $("#panda").show();
-    if($(document).scrollTop()+window.innerHeight-($("#links").offset().top+$("#links").height())>320 && $(".waifu").attr("data-position")=="ok"){
-        $(".waifu").fadeIn(800);
+    if($(document).scrollTop()+window.innerHeight-($("#links").offset().top+$("#links").height())>200 && $(".waifu").attr("data-position")=="ok"){
+        $("#panda").show();
     }
 })
 

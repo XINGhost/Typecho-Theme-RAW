@@ -1,13 +1,12 @@
 .waifu {
     position: fixed;
     bottom: 0;
-    left: -50px;
+    left: -45px;
     z-index: 1;
     font-size: 0;
     transition: all .3s ease-in-out;
     -webkit-transform: translateY(3px);
     transform: translateY(3px);
-    display: none;
 }
 .waifu:hover {
     -webkit-transform: translateY(0);
@@ -15,7 +14,7 @@
 }
 .night .waifu {
     color: #34495e;
-    filter: brightness(30%);
+    filter: brightness(70%);
 }
 @media (max-width: 768px) {
     .waifu,.pio {
