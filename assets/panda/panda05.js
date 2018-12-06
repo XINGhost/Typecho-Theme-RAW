@@ -68,26 +68,10 @@ masterTl
 //GSDevTools.create();
 
 $(document).ready(function(){
-    $("#panda").css("left",$(".center").offset().left+$(".center").width()+"px");
-    $("#panda").attr("data-position","ok");
-    if($(document).scrollTop()+window.innerHeight-($("#links").offset().top+$("#links").height())>200 && $("#panda").attr("data-position")=="ok"){
-        $("#panda").show();
-    }
-})
-$(document).scroll(function(){
-    if($(document).scrollTop()+window.innerHeight-($("#links").offset().top+$("#links").height())>200 && $("#panda").attr("data-position")=="ok"){
-        $("#panda").show();
-    }else{
-        $("#panda").hide();
-    }
-    
+    $("#panda").css("left",$(".center").offset().left+$(".center").width()+"px").css("opacity","1");
 })
 $(window).resize(function(){
     $("#panda").css("left",$(".center").offset().left+$(".center").width()+"px")
-})
-
-$(document).on('pjax:send',function(){
-    $("#panda").hide();
 })
 
 function hitokoto(item){
@@ -107,9 +91,6 @@ hitokoto();
 
 $(document).on('pjax:complete',function(){
     hitokoto();
-    if($(document).scrollTop()+window.innerHeight-($("#links").offset().top+$("#links").height())>200 && $(".waifu").attr("data-position")=="ok"){
-        $("#panda").show();
-    }
 })
 
 setInterval(function(){
