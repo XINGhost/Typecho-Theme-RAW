@@ -68,17 +68,27 @@ masterTl
 //GSDevTools.create();
 
 $(document).ready(function(){
-    $("#panda").css("left",$(".center").offset().left+$(".center").width()-10+"px");
-    setTimeout(function(){
-        $("#panda").fadeTo(500,1);
-    },800)
+    $(".waifu").css("left",$(".center").offset().left+$(".center").width()+"px");
+    $(".waifu").attr("data-position","ok");
+    if($(document).scrollTop()+window.innerHeight-($("#links").offset().top+$("#links").height())>320 && $(".waifu").attr("data-position")=="ok"){
+        $(".waifu").fadeIn(800);
+    }
+})
+$(document).scroll(function(){
+    if($(document).scrollTop()+window.innerHeight-($("#links").offset().top+$("#links").height())>320 && $(".waifu").attr("data-position")=="ok"){
+        $(".waifu").fadeIn(800);
+    }else{
+        $(".waifu").hide();
+    }
+    
 })
 $(window).resize(function(){
-    $("#panda").css("left",$(".center").offset().left+$(".center").width()-10+"px")
+    $(".waifu").css("left",$(".center").offset().left+$(".center").width()+"px")
 })
 
 $(document).on('pjax:send',function(){
-    $("#panda").fadeTo(0,0);
+    $("#panda").hide();
+    $(".waifu").hide();
 })
 
 function hitokoto(item){
@@ -98,9 +108,10 @@ hitokoto();
 
 $(document).on('pjax:complete',function(){
     hitokoto();
-    setTimeout(function(){
-        $("#panda").fadeTo(500,1);
-    },800)
+    $("#panda").show();
+    if($(document).scrollTop()+window.innerHeight-($("#links").offset().top+$("#links").height())>320 && $(".waifu").attr("data-position")=="ok"){
+        $(".waifu").fadeIn(800);
+    }
 })
 
 setInterval(function(){

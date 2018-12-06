@@ -73,7 +73,7 @@ $.each($(".post-like"),function(i,item){
 </script>
 <?php endif;?>
 <?php if(!Utils::isMobile()): ?>
-<div id="panda" style="opacity:0;display:flex;align-items:center;justify-content:center;position:fixed;bottom:-15px;z-index:-1">
+<div id="panda" style="left:0;display:flex;align-items:center;justify-content:center;position:fixed;bottom:-15px">
 <svg style="width: 300px;visibility: visible;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="300 250 200 115" xml:space="preserve">
   <filter id="shadowBlur" x="0%" y="0%" width="275%" height="150%">
     <feGaussianBlur in="SourceGraphic" stdDeviation="2"></feGaussianBlur>
@@ -135,7 +135,28 @@ $.each($(".post-like"),function(i,item){
 </div>
 <script src="<?php $this->options->themeUrl('/assets/panda/TweenMax.min.js'); ?>"></script>
 <script src="<?php $this->options->themeUrl('/assets/panda/DrawSVGPlugin.min.js'); ?>"></script>
-<script src="<?php $this->options->themeUrl('/assets/panda/panda02.js'); ?>"></script>
+<script src="<?php $this->options->themeUrl('/assets/panda/panda03.js'); ?>"></script>
+<link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/panda/waifu.css');?>">
+<div class="waifu">
+    <div class="waifu-tips"></div>
+    <div>
+        <canvas id="live2d" width="650" height="600" class="live2d" style="width: 325px;height: 300px;"></canvas>
+    </div>
+    <div class="waifu-tool">
+        <span class="l2d-home"><a href="/" style="border:none"><i class="fa fa-home"></i></a></span>
+        <span class="l2d-eye"><i class="fa fa-moon-o"></i></span>
+        <span class="l2d-chat"><i class="fa fa-comment"></i></span>
+        <!--<span class="fui-user"></span>-->
+        <span class="l2d-photo"><i class="fa fa-camera-retro"></i></span>
+        <span class="l2d-info-circle"><a href="/about" style="border:none"><i class="fa fa-info-circle"></i></a></span>
+        <span class="l2d-cross"><i class="fa fa-close"></i></span>
+    </div>
+  </div>
+<script async src="<?php $this->options->themeUrl('/assets/panda/waifu-tips.js'); ?>"></script>
+<script src="<?php $this->options->themeUrl('/assets/panda/live2d.js'); ?>"></script>
+<script type="text/javascript">
+    loadlive2d("live2d", "<?php $this->options->themeUrl('/assets/panda/kesshouban/model.json'); ?>");
+</script>
 <?php endif; ?>
 </body>
 </html>

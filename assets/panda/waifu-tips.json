@@ -1,0 +1,110 @@
+{
+    "mouseover": [
+        {
+            "selector": "article h1 a[href^='http']",
+            "text": ["要看看 <span style=\"color:#0099cc;\">{text}</span> 么？"]
+        },
+        {
+            "selector": ".l2d-home",
+            "text": ["让我们回到开始的地方~"]
+        },
+        {
+            "selector": ".l2d-eye",
+            "text": ["打开夜间模式保护眼睛吧！"]
+        },
+        {
+            "selector": ".l2d-chat",
+            "text": ["猜猜我会说什么？"]
+        },
+        {
+            "selector": ".l2d-photo",
+            "text": ["给我照张相吧~"]
+        },
+        {
+            "selector": ".l2d-info-circle",
+            "text": ["看看更多关于主人的信息"]
+        },
+        {
+            "selector": ".l2d-cross",
+            "text": ["已经要说再见了吗……"]
+        },
+        {
+            "selector": "a[href='/']",
+            "text": ["让我们回到开始的地方~"]
+        },
+        {
+            "selector": "#ctrler",
+            "text": ["一顿操作 吼吼！"]
+        },
+        {
+            "selector": ".like-button",
+            "text": ["主人说点赞是美德"]
+        },
+        {
+            "selector": ".avatar",
+            "text": ["头像好看吗？"]
+        },
+        {
+            "selector": "input#author",
+            "text": ["你叫什么名字呀"]
+        },
+        {
+            "selector": "input#mail",
+            "text": ["留下邮箱吧，这样就有头像了！"]
+        },
+        {
+            "selector": "input#url",
+            "text": ["你的家在哪里呀，我也想去玩~"]
+        },
+        {
+            "selector": "input[name=\"sum\"]",
+            "text": ["认真算哦！"]
+        },
+        {
+            "selector": "textarea#textarea",
+            "text": ["认真填哦，辣鸡评论是禁止事项！"]
+        },
+        {
+            "selector": "#comment-submit-button",
+            "text": ["检查好了就发射吧！Biu~"]
+        },
+        {
+            "selector": "#panda",
+            "text": ["小熊猫可爱吗？我们是好朋友~"]
+        },
+        {
+            "selector": ".post-pager-prev",
+            "text": ["要不要看看上一篇呢？"]
+        },
+        {
+            "selector": ".post-pager-next",
+            "text": ["要不要看看下一篇呢？"]
+        },
+        {
+            "selector": ".post-pager-reward",
+            "text": ["主人说如果能帮到你就太好了呢~"]
+        },
+        {
+            "selector": ".OwO-logo",
+            "text": ["这里有很多可爱的小表情 (#^.^#)"]
+        },
+        {
+            "selector": ".comment-mail-me",
+            "text": ["放心，不会给你发辣鸡邮件的，我是很听话的血小板~"]
+        },
+        {
+            "selector": "#index-loadmore-btn",
+            "text": ["看看还有什么吧"]
+        },
+        {
+            "selector": "a[data-fancybox=\"gallery\"]",
+            "text": ["点击可以放大！"]
+        }
+    ],
+    "click": [
+        {
+            "selector": ".waifu #live2d",
+            "text": ["是…是不小心碰到了吧", "萝莉控是什么呀", "你看到我的小熊了吗", "再摸的话我可要报警了！⌇●﹏●⌇", "110吗，这里有个变态一直在摸我(ó﹏ò｡)"]
+        }
+    ]
+}
