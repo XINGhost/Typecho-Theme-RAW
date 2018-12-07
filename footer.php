@@ -97,7 +97,7 @@ $.each($(".post-like"),function(i,item){
     checkWaifu();
 </script>
 <style>
-#TOC{
+#TOC>ul{
   max-height: calc(100vh - 420px);
 }
 </style>

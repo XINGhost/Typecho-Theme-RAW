@@ -29,6 +29,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
             <div class="post-item-body" style="padding-top:0.001em"><h1 style="text-align:center;margin-top:40px;color:var(--text-color)">糟糕，是 404 的感觉</h1></div>
             </div>
         <?php else:?>
+            <?php if($this->is('archive')): ?>
             <div class="post-item item-nav">
                 <div class="post-item-body flex justify-content-justify align-items-center" style="padding:0">
                 <b style="color:var(--text-color);display:block;padding:1em">
@@ -43,24 +44,18 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
                     ), '', ''); ?>
                     <?php endif; ?>
                 </b>
-                <div class="index-filter flex justify-content-justify align-items-center">
+                <div class="hidden index-filter flex justify-content-justify align-items-center">
                     <div class="current" onclick="filterItems(this,0);">全部</div>
                     <div onclick="filterItems(this,1);">日志</div>
                     <div onclick="filterItems(this,2);">说说</div>
                 </div>
                 </div>
             </div>
-            <?php $index=0; $index_s=0; ?>
+            <?php endif;?>
+            <?php $index=0; ?>
             <?php while($this->next()): ?>
-                <?php 
-                    if($this->fields->type=='1'){
-                        $index_s++;
-                    }
-                    else{
-                        $index++;
-                    }
-                ?>
-                <div style="animation-delay:<?php echo $this->fields->type=='1'? 0.2*$index_s : 0.2*$index; ?>s" class="post-item <?php if($this->fields->type=='1') echo 'shuoshuo';?>">
+                <?php $index++; ?>
+                <div style="animation-delay:<?php echo 0.2*$index; ?>s" class="post-item <?php if($this->fields->type=='1') echo 'shuoshuo';?>">
                     <div class="post-item-header flex align-items-center">
                         <img class="avatar" src="<?php echo Typecho_Common::gravatarUrl($this->author->mail, 100, '', '', true)?>" />
                         <div style="font-size: 14px; line-height: 1.5;overflow:hidden" class="post-meta flex flex-direction-column">
