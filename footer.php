@@ -96,11 +96,21 @@ $.each($(".post-like"),function(i,item){
     loadlive2d("live2d", "<?php $this->options->themeUrl('/assets/panda/kesshouban/model.json'); ?>");
     checkWaifu();
 </script>
+<?php endif; ?>
 <style>
-#TOC>ul{
-  max-height: calc(100vh - 420px);
+@media screen and (min-width:769px){
+    #TOC>ul{
+        max-height: calc(100vh - 450px);
+    }
+}
+#TOC{
+    width:var(--nav-left-width);
+}
+#TOC.fancybox-content{
+    padding: 16px;
+    width: 250px;
+    max-width:250px;
 }
 </style>
-<?php endif; ?>
 </body>
 </html>
