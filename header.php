@@ -14,7 +14,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 <header id="header">
     <nav class="flex justify-content-justify align-items-center">
         <div class="flex align-items-center">
-            <a id="brand" href="/" target="_self"><?php echo $this->options->sitelogo? $this->options->sitelogo:$this->options->title; ?></a>
+            <a id="brand" style="min-width:unset" href="/" target="_self"><?php echo $this->options->sitelogo? $this->options->sitelogo:$this->options->title; ?></a>
             <div class="nav-links flex justify-content-center align-items-center">
                 <?php 
                     if($this->options->headernav&&$this->options->headernav!=''){
