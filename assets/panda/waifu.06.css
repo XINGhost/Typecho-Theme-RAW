@@ -5,12 +5,12 @@
     z-index: 1;
     font-size: 0;
     transition: all .3s ease-in-out;
-    -webkit-transform: translate(-820px,3px);
-    transform: translate(-820px,3px);
+    -webkit-transform: translate(230px,3px);
+    transform: translate(230px,3px);
 }
 .waifu:hover {
-    -webkit-transform: translate(-820px,0);
-    transform: translate(-820px,0);
+    -webkit-transform: translate(230px,0);
+    transform: translate(230px,0);
 }
 .night .waifu {
     color: #34495e;
