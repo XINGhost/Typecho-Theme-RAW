@@ -1,24 +1,24 @@
 .waifu {
     position: fixed;
     bottom: 0;
-    left: -45px;
+    left: 50%;
     z-index: 1;
     font-size: 0;
     transition: all .3s ease-in-out;
-    -webkit-transform: translateY(3px);
-    transform: translateY(3px);
+    -webkit-transform: translate(-820px,3px);
+    transform: translate(-820px,3px);
 }
 .waifu:hover {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translate(-820px,0);
+    transform: translate(-820px,0);
 }
 .night .waifu {
     color: #34495e;
     filter: brightness(70%);
 }
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     .waifu,.pio {
-        display: none;
+        display: none!important;
     }
 }
 .waifu-tips {

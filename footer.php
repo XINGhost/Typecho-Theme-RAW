@@ -136,7 +136,7 @@ $.each($(".post-like"),function(i,item){
 <script src="<?php $this->options->themeUrl('/assets/panda/TweenMax.min.js'); ?>"></script>
 <script src="<?php $this->options->themeUrl('/assets/panda/DrawSVGPlugin.min.js'); ?>"></script>
 <script src="<?php $this->options->themeUrl('/assets/panda/panda05.js'); ?>"></script>
-<link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/panda/waifu.01.css');?>">
+<link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/panda/waifu.05.css');?>">
 <div class="waifu">
     <div class="waifu-tips"></div>
     <div>
