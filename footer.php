@@ -73,7 +73,7 @@ $.each($(".post-like"),function(i,item){
 </script>
 <?php endif;?>
 <?php if(!Utils::isMobile()): ?>
-<script src="<?php $this->options->themeUrl('/assets/panda/panda06.js'); ?>"></script>
+<script src="<?php $this->options->themeUrl('/assets/panda/panda0a.js'); ?>"></script>
 <link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/panda/waifu.06.css');?>">
 <div class="waifu">
     <div class="waifu-tips"></div>
