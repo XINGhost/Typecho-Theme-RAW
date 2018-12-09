@@ -43,7 +43,7 @@ var owo = new OwO({
 <?php endif; ?>  
 <script src="<?php $this->options->themeUrl('/assets/hljs/highlight.pack.js'); ?>"></script>
 <script src="<?php $this->options->themeUrl('/assets/fancybox/jquery.fancybox.min.js'); ?>"></script>
-<script src="<?php $this->options->themeUrl('/assets/main.24.js'); ?>"></script>
+<script src="<?php $this->options->themeUrl('/assets/main.panda.01.js'); ?>"></script>
 <!--script src="<?php $this->options->themeUrl('/assets/smothscroll/smothscroll.js'); ?>"></script-->
 <?php if($this->options->pjax=='1'): ?>
 <script src="<?php $this->options->themeUrl('/assets/pjax/jquery.pjax.js'); ?>"></script>
@@ -74,15 +74,17 @@ $.each($(".post-like"),function(i,item){
 <?php endif;?>
 <?php if(!Utils::isMobile()): ?>
 <script src="<?php $this->options->themeUrl('/assets/panda/panda0b.js'); ?>"></script>
+
 <?php endif; ?>
 <style>
-@media screen and (min-width:769px){
-    #TOC>ul{
-        max-height: calc(100vh - 450px);
-    }
-}
 #TOC{
     width:var(--nav-left-width);
+    background:none!important;
+    box-shadow:none!important;
+}
+#TOC ul{
+    max-height:unset;
+    background:none!important;
 }
 #TOC.fancybox-content{
     padding: 16px;
