@@ -21,11 +21,11 @@ function checkWaifu(){
 }
 $(document).on('pjax:complete',function(){
     hitokoto();
-    checkWaifu();
+    //checkWaifu();
 })
 
 $(document).scroll(function(){
-    checkWaifu();
+    //checkWaifu();
 })
 
 setInterval(function(){
