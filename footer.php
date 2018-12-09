@@ -90,6 +90,7 @@ $.each($(".post-like"),function(i,item){
     padding: 16px;
     width: 250px;
     max-width:250px;
+    background: var(--bg-color)!important;
 }
 </style>
 </body>
