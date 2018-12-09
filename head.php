@@ -102,3 +102,8 @@ function enterSearch(){
 </script>
 <?php echo $this->options->customhead; ?>
 </head> <!--end head-->
+<style>
+.post-item,#comments,#nav-left>div{
+    box-shadow:none
+}
+</style>
