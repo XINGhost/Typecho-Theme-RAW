@@ -36,7 +36,7 @@ Utils::exportHeader($this,$banner);
 <!--CSS-->
 <link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/fonts/font-awesome/4.7.0/css/font-awesome.min.css'); ?>" />
 <link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/owo/owo.min.css'); ?>" />
-<link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/hljs/styles/atom-one-light.css');?>">
+<link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/hljs/styles/atom-one-dark.css');?>">
 <link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/fancybox/jquery.fancybox.min.css');?>">
 <link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/main.54.css');?>">
 <link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/scheme-dark15.css');?>">
@@ -105,5 +105,9 @@ function enterSearch(){
 <style>
 .post-item,#comments,#nav-left>div{
     box-shadow:none
+}
+article pre code, .hljs {
+    color: #abb2bf;
+    background: #282c34;
 }
 </style>
